@@ -2,7 +2,7 @@
  * LinkedStrand.java
  * Provides a linked chunk list implementation of the DnaStrand interface.
  *
- * @author Your Name (you@auburn.edu)
+ * @author Evan Sheehan (you@auburn.edu)
  * @author Dean Hendrix (dh@auburn.edu)
  * @version 2017-10-17
  */
