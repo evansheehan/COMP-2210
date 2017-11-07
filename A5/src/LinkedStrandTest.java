@@ -119,4 +119,9 @@ public class LinkedStrandTest {
       LinkedStrand ls = new LinkedStrand();
       ls.initializeFrom("");
    }
+
+   @Test
+   public void test11() {
+      LinkedStrand ls = new LinkedStrand("");
+   }
 }
