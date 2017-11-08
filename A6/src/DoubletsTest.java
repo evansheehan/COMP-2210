@@ -34,11 +34,38 @@ public class DoubletsTest {
 
    @Test
    public void hammingTest3() throws FileNotFoundException {
-      String str1 = "clown";
-      String str2 = "blown";
+      String str1 = "screen";
+      String str2 = "greens";
       WordLadderGame doublets = new Doublets(new FileInputStream(new File("sowpods.txt")));
-      int expected = 1;
+      int expected = 5;
       int actual = doublets.getHammingDistance(str1, str2);
       Assert.assertEquals(expected, actual);
+   }
+
+   @Test
+   public void wordCountTest1() throws FileNotFoundException {
+      WordLadderGame doublets = new Doublets(new FileInputStream(new File("sowpods.txt")));
+      int expected = 267751;
+      int actual = doublets.getWordCount();
+      Assert.assertEquals(expected, actual);
+
+   }
+
+   @Test
+   public void isWordTest1() throws FileNotFoundException {
+      WordLadderGame doublets = new Doublets(new FileInputStream(new File("sowpods.txt")));
+      String str = "BBBBBBB";
+      boolean expected = false;
+      boolean actual = doublets.isWord(str);
+      Assert.assertEquals(expected, actual);
+      str = "avocADo";
+      actual = doublets.isWord(str);
+      Assert.assertEquals(expected, actual);
+   }
+
+   @Test
+   public void neighborsTest1() throws FileNotFoundException {
+      WordLadderGame doublets = new Doublets(new FileInputStream(new File("sowpods.txt")));
+      System.out.println(doublets.getNeighbors("car"));
    }
 }

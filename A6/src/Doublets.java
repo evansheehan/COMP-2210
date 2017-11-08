@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  * Provides an implementation of the WordLadderGame interface. The lexicon
  * is stored as a TreeSet of Strings.
  *
- * @author Your Name (you@auburn.edu)
+ * @author Evan Sheehan (you@auburn.edu)
  * @author Dean Hendrix (dh@auburn.edu)
  * @version 2017-11-06
  */
@@ -122,7 +122,13 @@ public class Doublets implements WordLadderGame {
     */
    @Override
    public List<String> getNeighbors(String word) {
-      return null;
+      List<String> neighbors = new ArrayList<String>();
+      for (String string : lexicon) {
+         if (this.getHammingDistance(word, string) == 1) {
+            neighbors.add(string);
+         }
+      }
+      return neighbors;
    }
 
    /**
@@ -132,7 +138,7 @@ public class Doublets implements WordLadderGame {
     */
    @Override
    public int getWordCount() {
-      return 0;
+      return lexicon.size();
    }
 
    /**
@@ -143,6 +149,9 @@ public class Doublets implements WordLadderGame {
     */
    @Override
    public boolean isWord(String str) {
+      if (lexicon.contains(str)) {
+         return true;
+      }
       return false;
    }
 

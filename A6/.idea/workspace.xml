@@ -13,34 +13,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Doublets.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Doublets.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Doublets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-108">
-              <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+            <state relative-caret-position="681">
+              <caret line="124" column="55" lean-forward="true" selection-start-line="124" selection-start-column="55" selection-end-line="124" selection-end-column="55" />
               <folding>
-                <element signature="e#3130#3131#0" expanded="true" />
-                <element signature="e#3154#3155#0" expanded="true" />
-                <element signature="e#3706#3707#0" expanded="true" />
-                <element signature="e#3730#3731#0" expanded="true" />
-                <element signature="e#3992#3993#0" expanded="true" />
-                <element signature="e#4016#4017#0" expanded="true" />
-                <element signature="e#4190#4191#0" expanded="true" />
-                <element signature="e#4211#4212#0" expanded="true" />
-                <element signature="e#4425#4426#0" expanded="true" />
-                <element signature="e#4450#4451#0" expanded="true" />
-                <element signature="e#4756#4757#0" expanded="true" />
-                <element signature="e#4781#4782#0" expanded="true" />
+                <element signature="e#3133#3134#0" expanded="true" />
+                <element signature="e#3157#3158#0" expanded="true" />
+                <element signature="e#3709#3710#0" expanded="true" />
+                <element signature="e#3733#3734#0" expanded="true" />
+                <element signature="e#4041#4049#0" expanded="true" />
+                <element signature="e#4405#4406#0" expanded="true" />
+                <element signature="e#4439#4440#0" expanded="true" />
+                <element signature="e#5049#5050#0" expanded="true" />
+                <element signature="e#5074#5075#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoubletsTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DoubletsTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DoubletsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+            <state relative-caret-position="405">
+              <caret line="68" column="54" lean-forward="false" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,10 +45,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="sowpods.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sowpods.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4015833">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="WordLadderGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordLadderGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
+            <state relative-caret-position="-585">
               <caret line="36" column="52" lean-forward="false" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
               <folding />
             </state>
@@ -87,8 +94,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/WordLadderGame.java" />
         <option value="$PROJECT_DIR$/src/ExampleClient.java" />
-        <option value="$PROJECT_DIR$/src/Doublets.java" />
         <option value="$PROJECT_DIR$/src/DoubletsTest.java" />
+        <option value="$PROJECT_DIR$/src/Doublets.java" />
       </list>
     </option>
   </component>
@@ -185,30 +192,36 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DoubletsTest">
-    <configuration default="false" name="ExampleClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="ExampleClient" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="A6" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="DoubletsTest.hammingTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DoubletsTest.neighborsTest1">
+    <configuration default="false" name="DoubletsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="A6" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DoubletsTest" />
-      <option name="METHOD_NAME" value="hammingTest1" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DoubletsTest.hammingTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="A6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DoubletsTest" />
+      <option name="METHOD_NAME" value="hammingTest3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -222,15 +235,57 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="DoubletsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="DoubletsTest.wordCountTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="A6" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DoubletsTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="wordCountTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DoubletsTest.isWordTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="A6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DoubletsTest" />
+      <option name="METHOD_NAME" value="isWordTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DoubletsTest.neighborsTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="A6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DoubletsTest" />
+      <option name="METHOD_NAME" value="neighborsTest1" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -623,16 +678,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.ExampleClient" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DoubletsTest.hammingTest1" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DoubletsTest" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.DoubletsTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DoubletsTest.hammingTest3" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DoubletsTest.wordCountTest1" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DoubletsTest.isWordTest1" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DoubletsTest.neighborsTest1" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DoubletsTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DoubletsTest.hammingTest1" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ExampleClient" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DoubletsTest.neighborsTest1" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DoubletsTest.isWordTest1" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DoubletsTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DoubletsTest.wordCountTest1" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DoubletsTest.hammingTest3" />
       </list>
     </recent_temporary>
   </component>
@@ -646,7 +705,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510028489646</updated>
-      <workItem from="1510028493628" duration="3217000" />
+      <workItem from="1510028493628" duration="6744000" />
     </task>
     <servers />
   </component>
@@ -654,15 +713,36 @@
     <history-entry file="DoubletsTest - 2017.11.08 at 14h 00m 02s.xml">
       <configuration name="DoubletsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DoubletsTest_hammingTest1 - 2017.11.08 at 13h 56m 21s.xml">
-      <configuration name="DoubletsTest.hammingTest1" configurationId="JUnit" />
+    <history-entry file="DoubletsTest - 2017.11.08 at 15h 43m 55s.xml">
+      <configuration name="DoubletsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DoubletsTest_hammingTest1 - 2017.11.08 at 13h 58m 13s.xml">
-      <configuration name="DoubletsTest.hammingTest1" configurationId="JUnit" />
+    <history-entry file="DoubletsTest - 2017.11.08 at 15h 44m 14s.xml">
+      <configuration name="DoubletsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DoubletsTest_hammingTest3 - 2017.11.08 at 14h 15m 05s.xml">
+      <configuration name="DoubletsTest.hammingTest3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DoubletsTest_isWordTest1 - 2017.11.08 at 15h 49m 07s.xml">
+      <configuration name="DoubletsTest.isWordTest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DoubletsTest_neighborsTest1 - 2017.11.08 at 15h 58m 48s.xml">
+      <configuration name="DoubletsTest.neighborsTest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DoubletsTest_neighborsTest1 - 2017.11.08 at 17h 55m 49s.xml">
+      <configuration name="DoubletsTest.neighborsTest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DoubletsTest_wordCountTest1 - 2017.11.08 at 15h 39m 08s.xml">
+      <configuration name="DoubletsTest.wordCountTest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DoubletsTest_wordCountTest1 - 2017.11.08 at 15h 39m 53s.xml">
+      <configuration name="DoubletsTest.wordCountTest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DoubletsTest_wordCountTest1 - 2017.11.08 at 15h 43m 44s.xml">
+      <configuration name="DoubletsTest.wordCountTest1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3217000" />
+    <option name="totallyTimeSpent" value="6744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="643" extended-state="6" />
@@ -690,7 +770,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3989547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -708,7 +788,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -719,8 +799,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sowpods.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-4015833">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WordLadderGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-585">
+          <caret line="36" column="52" lean-forward="false" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -733,41 +821,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WordLadderGame.java">
+    <entry file="file://$PROJECT_DIR$/src/DoubletsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="36" column="52" lean-forward="false" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="405">
+          <caret line="68" column="54" lean-forward="false" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Doublets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+        <state relative-caret-position="681">
+          <caret line="124" column="55" lean-forward="true" selection-start-line="124" selection-start-column="55" selection-end-line="124" selection-end-column="55" />
           <folding>
-            <element signature="e#3130#3131#0" expanded="true" />
-            <element signature="e#3154#3155#0" expanded="true" />
-            <element signature="e#3706#3707#0" expanded="true" />
-            <element signature="e#3730#3731#0" expanded="true" />
-            <element signature="e#3992#3993#0" expanded="true" />
-            <element signature="e#4016#4017#0" expanded="true" />
-            <element signature="e#4190#4191#0" expanded="true" />
-            <element signature="e#4211#4212#0" expanded="true" />
-            <element signature="e#4425#4426#0" expanded="true" />
-            <element signature="e#4450#4451#0" expanded="true" />
-            <element signature="e#4756#4757#0" expanded="true" />
-            <element signature="e#4781#4782#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DoubletsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3133#3134#0" expanded="true" />
+            <element signature="e#3157#3158#0" expanded="true" />
+            <element signature="e#3709#3710#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#4041#4049#0" expanded="true" />
+            <element signature="e#4405#4406#0" expanded="true" />
+            <element signature="e#4439#4440#0" expanded="true" />
+            <element signature="e#5049#5050#0" expanded="true" />
+            <element signature="e#5074#5075#0" expanded="true" />
           </folding>
         </state>
       </provider>
