@@ -41,7 +41,7 @@ public class Doublets implements WordLadderGame {
             new Scanner(new BufferedReader(new InputStreamReader(in)));
          while (s.hasNext()) {
             String str = s.next();
-            lexicon.add(str);
+            lexicon.add(str.toLowerCase());
             s.nextLine();
          }
          in.close();
@@ -93,6 +93,9 @@ public class Doublets implements WordLadderGame {
     */
    @Override
    public List<String> getLadder(String start, String end) {
+      Deque<String> stack = new ArrayDeque<>();
+      stack.push(start);
+
       return null;
    }
 
@@ -110,6 +113,34 @@ public class Doublets implements WordLadderGame {
     */
    @Override
    public List<String> getMinLadder(String start, String end) {
+      /*List<String> wordLadder = new ArrayList<String>();
+      List<String> neighbors = new ArrayList<String>();
+      start = start.toLowerCase();
+      end = end.toLowerCase();
+
+      wordLadder = this.breadthFirstLadder(start, end, wordLadder, neighbors);
+      return wordLadder;*/
+      return null;
+   }
+
+   public List<String> breadthFirstLadder(String start, String end, List<String> wordLadder, List<String> neighbors) {
+      /*wordLadder.add(start);
+      neighbors = this.getNeighbors(start);
+
+      if (neighbors.contains(end)) {
+         wordLadder.add(end);
+         return wordLadder;
+      } else {
+         for (String neighbor : neighbors) {
+            if (!wordLadder.contains(neighbor)) {
+               start = neighbor;
+               this.recursiveLadder(start, end, wordLadder, neighbors);
+            } else {
+               wordLadder.remove(start);
+            }
+         }
+      }
+      return wordLadder;*/
       return null;
    }
 
@@ -149,7 +180,7 @@ public class Doublets implements WordLadderGame {
     */
    @Override
    public boolean isWord(String str) {
-      if (lexicon.contains(str)) {
+      if (lexicon.contains(str.toLowerCase())) {
          return true;
       }
       return false;
@@ -164,7 +195,12 @@ public class Doublets implements WordLadderGame {
     */
    @Override
    public boolean isWordLadder(List<String> sequence) {
-      return false;
+      for (int i = 0; i < sequence.size(); i++) {
+         if (i != 0 && this.getHammingDistance(sequence.get(i - 1), sequence.get(i)) != 1) {
+            return false;
+         }
+      }
+      return true;
    }
 
 }
