@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -93,10 +94,52 @@ public class Doublets implements WordLadderGame {
     */
    @Override
    public List<String> getLadder(String start, String end) {
-      Deque<String> stack = new ArrayDeque<>();
-      stack.push(start);
+      if (start.length() != end.length()) {
+         return null;
+      }
 
-      return null;
+      List<String> ladder = new ArrayList<>();
+      List<String> visited = new ArrayList<>();
+      List<String> neighbors;
+
+      ladder.add(start);
+      visited.add(start);
+
+      while (ladder.size() != 0) {
+         neighbors = getNeighbors(start);
+
+         for (String neighbor : neighbors) {
+            neighbors = getNeighbors(start);
+            if (neighbor.compareTo(end) == 0) {
+               ladder.add(neighbor);
+               visited.add(neighbor);
+               return ladder;
+            } else if (allVisited(visited, neighbors)) {
+               int index = ladder.indexOf(start);
+               ladder.remove(start);
+               try {
+                  start = ladder.get(index - 1);
+               } catch (ArrayIndexOutOfBoundsException e) {
+               }
+            } else if (!visited.contains(neighbor) && getHammingDistance(neighbor, end) <= getHammingDistance(start, end)) {
+               start = neighbor;
+               ladder.add(start);
+               visited.add(start);
+            } else {
+               ladder.remove(start);
+            }
+         }
+      }
+      return ladder;
+   }
+
+   private boolean allVisited(List<String> visited, List<String> neighbors) {
+      for (String neighbor : neighbors) {
+         if (!visited.contains(neighbor)) {
+            return false;
+         }
+      }
+      return true;
    }
 
    /**
@@ -113,34 +156,10 @@ public class Doublets implements WordLadderGame {
     */
    @Override
    public List<String> getMinLadder(String start, String end) {
-      /*List<String> wordLadder = new ArrayList<String>();
-      List<String> neighbors = new ArrayList<String>();
-      start = start.toLowerCase();
-      end = end.toLowerCase();
-
-      wordLadder = this.breadthFirstLadder(start, end, wordLadder, neighbors);
-      return wordLadder;*/
-      return null;
-   }
-
-   public List<String> breadthFirstLadder(String start, String end, List<String> wordLadder, List<String> neighbors) {
-      /*wordLadder.add(start);
-      neighbors = this.getNeighbors(start);
-
-      if (neighbors.contains(end)) {
-         wordLadder.add(end);
-         return wordLadder;
-      } else {
-         for (String neighbor : neighbors) {
-            if (!wordLadder.contains(neighbor)) {
-               start = neighbor;
-               this.recursiveLadder(start, end, wordLadder, neighbors);
-            } else {
-               wordLadder.remove(start);
-            }
-         }
+      if (start.length() != end.length()) {
+         return null;
       }
-      return wordLadder;*/
+
       return null;
    }
 
@@ -195,6 +214,9 @@ public class Doublets implements WordLadderGame {
     */
    @Override
    public boolean isWordLadder(List<String> sequence) {
+      if (sequence.size() < 2) {
+         return false;
+      }
       for (int i = 0; i < sequence.size(); i++) {
          if (i != 0 && this.getHammingDistance(sequence.get(i - 1), sequence.get(i)) != 1) {
             return false;

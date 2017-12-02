@@ -72,5 +72,19 @@ public class DoubletsTest {
    @Test
    public void recursiveTest1() throws FileNotFoundException {
       WordLadderGame doublets = new Doublets(new FileInputStream(new File("sowpods.txt")));
+      String start = "aa";
+      String end = "aa";
+      System.out.println(doublets.getLadder(start, end));
    }
+
+   @Test
+   public void wordLadderTest() throws FileNotFoundException {
+      WordLadderGame doublets = new Doublets(new FileInputStream(new File("sowpods.txt")));
+      String start = "bath";
+      String end = "tubs";
+      System.out.println(doublets.getLadder(start, end));
+      System.out.println(doublets.getMinLadder(start, end));
+   }
+
+
 }
