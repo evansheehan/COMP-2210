@@ -11,10 +11,9 @@ import java.util.Set;
  * the model. A kgram is a sequence of k consecutive characters in the source
  * text.
  *
- * @author     Your Name (you@auburn.edu)
- * @author     Dean Hendrix (dh@auburn.edu)
- * @version    2017-11-28
- *
+ * @author Evan Sheehan (res0038@auburn.edu)
+ * @author Dean Hendrix (dh@auburn.edu)
+ * @version 2017-11-28
  */
 public class MarkovModel {
 
@@ -22,22 +21,20 @@ public class MarkovModel {
    private HashMap<String, String> model;
 
    // add other fields as you need them ...
-
+   private String firstKgram;
 
    /**
     * Reads the contents of the file sourceText into a string, then calls
     * buildModel to construct the order K model.
-    *
+    * <p>
     * DO NOT CHANGE THIS CONSTRUCTOR.
-    *
     */
    public MarkovModel(int K, File sourceText) {
       model = new HashMap<>();
       try {
          String text = new Scanner(sourceText).useDelimiter("\\Z").next();
          buildModel(K, text);
-      }
-      catch (IOException e) {
+      } catch (IOException e) {
          System.out.println("Error loading source text: " + e);
       }
    }
@@ -45,9 +42,8 @@ public class MarkovModel {
 
    /**
     * Calls buildModel to construct the order K model of the string sourceText.
-    *
+    * <p>
     * DO NOT CHANGE THIS CONSTRUCTOR.
-    *
     */
    public MarkovModel(int K, String sourceText) {
       model = new HashMap<>();
@@ -59,29 +55,52 @@ public class MarkovModel {
     * Builds an order K Markov model of the string sourceText.
     */
    private void buildModel(int K, String sourceText) {
+      int i = 0;
+      firstKgram = sourceText.substring(i, i + K);
 
+      while (i + K < sourceText.length() + 1) {
+         String curr = sourceText.substring(i, i + K);
+         String val;
+         try {
+            val = sourceText.substring(i + K, i + K + 1);
+         } catch (StringIndexOutOfBoundsException e) {
+            val = null;
+         }
+
+         if (model.putIfAbsent(curr, val) != null) {
+            String newVal = model.get(curr);
+            newVal += val;
+            model.put(curr, newVal);
+         }
+         i++;
+      }
    }
 
-
-   /** Returns the first kgram found in the source text. */
+   /**
+    * Returns the first kgram found in the source text.
+    */
    public String getFirstKgram() {
-      return null;
+      return firstKgram;
    }
 
-
-   /** Returns a kgram chosen at random from the source text. */
+   /**
+    * Returns a kgram chosen at random from the source text.
+    */
    public String getRandomKgram() {
-      return null;
+      Random rand = new Random();
+      Object[] keySet = getAllKgrams().toArray();
+      int index = rand.nextInt(model.size());
+      String kgram = keySet[index].toString();
+      return kgram;
    }
 
 
    /**
     * Returns the set of kgrams in the source text.
-    *
+    * <p>
     * DO NOT CHANGE THIS METHOD.
-    *
     */
-    public Set<String> getAllKgrams() {
+   public Set<String> getAllKgrams() {
       return model.keySet();
    }
 
@@ -93,19 +112,22 @@ public class MarkovModel {
     * text.
     */
    public char getNextChar(String kgram) {
-      return '\u0000';
-   }
+      String neighbors = model.get(kgram);
+      Random rand = new Random();
+      int index = rand.nextInt(neighbors.length());
+      char character = neighbors.charAt(index);
 
+      return character;
+   }
 
    /**
     * Returns a string representation of the model.
     * This is not part of the provided shell for the assignment.
-    *
+    * <p>
     * DO NOT CHANGE THIS METHOD.
-    *
     */
-    @Override
-    public String toString() {
+   @Override
+   public String toString() {
       return model.toString();
    }
 
