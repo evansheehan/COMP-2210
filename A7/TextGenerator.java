@@ -5,20 +5,22 @@ import java.io.IOException;
  * TextGenerator.java. Creates an order K Markov model of the supplied source
  * text, and then outputs M characters generated according to the model.
  *
- * @author     Evan Sheehan (res0038@auburn.edu)
- * @author     Dean Hendrix (dh@auburn.edu)
- * @version    2017-11-28
- *
+ * @author Evan Sheehan (res0038@auburn.edu)
+ * @author Dean Hendrix (dh@auburn.edu)
+ * @version 2017-11-28
  */
 public class TextGenerator {
 
-   /** Drives execution. */
+   /**
+    * Drives execution.
+    */
    public static void main(String[] args) {
 
+      File file = new File("testText.txt");
       args = new String[3];
-      args[0] = "8";
-      args[1] = "1000";
-      args[2] = "dickens.excerpt.txt";
+      args[0] = "50";
+      args[1] = "50000";
+      args[2] = file.toString();
 
 
       if (args.length < 3) {
@@ -52,9 +54,14 @@ public class TextGenerator {
 
       MarkovModel model = new MarkovModel(K, text);
       String output = model.getFirstKgram();
-      for (int i = 0; i < M; i++) {
+      for (int i = 0; i < M - K; i++) {
          String kgram = output.substring(i, i + K);
-         output += model.getNextChar(kgram);
+         try {
+            output += model.getNextChar(kgram);
+         } catch (NullPointerException e) {
+            output += model.getRandomKgram();
+         }
+         System.out.println(output.length());
       }
       System.out.print(output);
    }
