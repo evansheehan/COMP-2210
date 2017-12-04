@@ -15,6 +15,12 @@ public class TextGenerator {
    /** Drives execution. */
    public static void main(String[] args) {
 
+      args = new String[3];
+      args[0] = "8";
+      args[1] = "1000";
+      args[2] = "dickens.excerpt.txt";
+
+
       if (args.length < 3) {
          System.out.println("Usage: java TextGenerator k length input");
          return;
