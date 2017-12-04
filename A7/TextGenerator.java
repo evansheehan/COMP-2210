@@ -16,10 +16,10 @@ public class TextGenerator {
     */
    public static void main(String[] args) {
 
-      File file = new File("testText.txt");
+      File file = new File("2city10.txt");
       args = new String[3];
-      args[0] = "50";
-      args[1] = "50000";
+      args[0] = "10";
+      args[1] = "500";
       args[2] = file.toString();
 
 

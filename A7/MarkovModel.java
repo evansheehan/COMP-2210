@@ -56,6 +56,7 @@ public class MarkovModel {
     */
    private void buildModel(int K, String sourceText) {
       sourceText = sourceText.replaceAll("\n", " ");
+      sourceText = sourceText.replaceAll("\r", "");
       int i = 0;
       firstKgram = sourceText.substring(i, i + K);
 
