@@ -54,7 +54,7 @@ public class MarkovModel {
    /**
     * Builds an order K Markov model of the string sourceText.
     */
-   private void buildModel(int K, String sourceText) {
+   /*private void buildModel(int K, String sourceText) {
       int i = 0;
       firstKgram = sourceText.substring(i, i + K);
 
@@ -74,6 +74,10 @@ public class MarkovModel {
          }
          i++;
       }
+   }*/
+
+   private void buildModel(int K, String sourceText) {
+      Scanner sc = new Scanner(sourceText);
    }
 
    /**
